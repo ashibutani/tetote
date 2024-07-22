@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="テクノロジーで社会課題を解決する。AIやビッグデータ分析などの技術を活用した社会課題解決サービスを提供するTETOTEの採用サイト。">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- ファビコン-->
+    <link rel="icon" href="/favicon.ico" id="favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins&family=Viga&display=swap"
+        rel="stylesheet">
+
+    <!-- slick css -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <!-- <link href="css/slick-theme.css" rel="stylesheet" type="text/css"> -->
+
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media2.css">
+
+
+    <title>採用特設サイト | 株式会社TETOTE</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/tetote-logo.png" class="logo-white" alt="tetoteロゴマーク">
+                        <img src="images/tetote-logo-black.png" class="logo-black" alt="tetoteロゴマーク">
+                    </a>
+                </div>
+
+            </div>
+            <div class="header-right">
+                <div class="header-btn-box">
+                    <button class="recruiting-criteria-btn  back-black button">
+                        <a href="detail.html">
+                            <p class="f14">募集要項</p>
+                        </a>
+                    </button>
+                    <button class="entry-btn back-gold button">
+                        <a href="entry.html">
+
+                            <p class="f14 f-viga">ENTRY</p>
+                        </a>
+                    </button>
+                </div>
+
+                <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
+                    aria-expanded="false" aria-label="メニューを開閉する">
+                    <span class="hamburger__line">
+                    </span>
+                    <span class="hmb_text f-viga fpc12sp10">MENU</span>
+                </button>
+
+            </div>
+            <!-- navigation -->
+            <div class="global-navigation" id="js-global-menu" aria-hidden="true">
+                <div class="nav-top-logo nav-logo">
+                    <a href="index.html">
+
+                        <img src="images/tetote-logo-black.png">
+                    </a>
+                </div>
+
+                <div class="nav-left">
+                    <div class="nav-logo">
+                        <a href="index.html">
+                            <img src="images/tetote-logo-black.png">
+                        </a>
+                    </div>
+                </div>
+                <!-- pc nav  -->
+                <nav class="pc-nav-right">
+                    <ul class="pc-nav-container">
+                        <div class="pc-nav-wrap">
+
+                            <li class="list-item">
+                                <a href="about.html">
+                                    <p>
+                                        <span class="fpc32sp18">ABOUT US</span><br>
+                                        <span class="fpc16sp12">TETOTEについて</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="staff.html">
+                                    <p>
+                                        <span class="fpc32sp18">STAFF</span><br>
+                                        <span class="fpc16sp12">社員について</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="blog.html">
+                                    <p>
+                                        <span class="fpc32sp18">BLOG</span><br>
+                                        <span class="fpc16sp12">採用ブログ</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="pc-nav-wrap">
+                            <li class="list-item">
+                                <a href="benefits.html">
+                                    <p>
+                                        <span class="fpc32sp18">BENEFITS</span><br>
+                                        <span class="fpc16sp12">福利厚生について</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="carrer.html">
+                                    <p>
+                                        <span class="fpc32sp18">CARRER</span><br>
+                                        <span class="fpc16sp12">研修制度とキャリアパス</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="faq.html">
+                                    <p>
+                                        <span class="fpc32sp18">FAQ</span><br>
+                                        <span class="fpc16sp12">よくある質問</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="nav-btn-box">
+                        <li class="pc-nav-wrap list-item">
+                            <button class="nav-recruiting-criteria-btn  back-black button">
+                                <a href="detail.html">
+                                    <p class="f14">募集要項</p>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="pc-nav-wrap list-item">
+                            <button class="nav-entry-btn back-gold button">
+                                <a href="entry.html">
+                                    <p class="f14 f-viga">ENTRY</p>
+                                </a>
+                            </button>
+                        </li>
+                    </div>
+                </nav>
+                <!-- sp nav -->
+                <nav class="sp-nav-right">
+                    <ul class="sp-nav-container">
+                        <li class="list-item">
+                            <a href="about.html">
+                                <p>
+                                    <span class="fpc32sp18">ABOUT US</span><br>
+                                    <span class="fpc16sp12">TETOTEについて</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="staff.html">
+                                <p>
+                                    <span class="fpc32sp18 ">STAFF</span><br>
+                                    <span class="fpc16sp12">社員について</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="blog.html">
+                                <p>
+                                    <span class="fpc32sp18 f-viga">BLOG</span><br>
+                                    <span class="fpc16sp12">採用ブログ</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="benefits.html">
+                                <p>
+                                    <span class="fpc32sp18">BENEFITS</span><br>
+                                    <span class="fpc16sp12">福利厚生について</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="carrer.html">
+                                <p>
+                                    <span class="fpc32sp18">CARRER</span><br>
+                                    <span class="fpc16sp12">研修制度とキャリアパス</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="faq.html">
+                                <p>
+                                    <span class="fpc32sp18">FAQ</span><br>
+                                    <span class="fpc16sp12">よくある質問</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav-btn-box">
+                        <li class="list-item">
+                            <button class="nav-recruiting-criteria-btn  back-black button">
+                                <a href="detail.html">
+                                    <p class="f14">募集要項</p>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="list-item">
+                            <button class="nav-entry-btn back-gold button">
+                                <a href="entry.html">
+                                    <p class="f14 f-viga">ENTRY</p>
+                                </a>
+                            </button>
+                        </li>
+                    </div>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <!--------- ファーストビュー --------->
+        <div class="fv-wrapper">
+            <div class="fv-slide-box slideinTop">
+                <img class="slide_pic" src="images/fv01.jpg">
+                <img class="slide_pic" src="images/fv02.jpg">
+            </div>
+            <div class="slogan-en">
+                <h1 class="fpc96sp48 f-viga">
+                    BECOME A<br>
+                    CHALLENGER.
+                </h1>
+            </div>
+            <div class="slogan-jp back-black">
+                <h2 class="fpc24sp12 ">
+                    君の挑戦が、意思が、未来を変える
+                </h2>
+            </div>
+            <div class="new-topic-contaiter">
+                <div class="new-topic-left back-black">
+                    <p class="fpc24sp10">NEWS</p>
+                </div>
+
+                <div class="new-topic-right">
+                    <!-- 最新ブログを掲載 -->
+                    <p class="fpc16sp12"><a href="">2024年度働きやすさランキング一位を取得しました！！</a></p>
+
+                    <div class="topic-view-more">
+                        <a href="blog.html">
+                            <p class="f14 f-viga">VIEW MORE</p>
+
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--------- セカンドビュー --------->
+        <div class="second-view">
+            <!-- スライダー1 -->
+            <div class="slider-wrapper">
+                <h2 class="slide-catch fpc40sp24">
+                    <span class="back-white">後悔しないキャリアを作る、</span><br>
+                    <span class="back-white">それこそが、我々の使命だ</span>
+                </h2>
+                <div class="slider sv-slider">
+                    <div class="slide-item">
+                        <img src="images/slide1.jpeg" alt="">
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/slide2.jpeg" alt="">
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/slide3.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--  理念-->
+            <div class="philosophy-wrapper" id="philosophy">
+                <div class="philosophy-container">
+                    <h4 class="fpc36sp18">
+                        「人手不足」<br>
+                        今の日本が抱えるこの社会課題に挑み、<br>
+                        企業と個人の可能性を最大限に引き出す。<br>
+                        それが私達の役目。
+                    </h4>
+                </div>
+                <div class="philosophy-container">
+                    <h4 class="fpc36sp18">
+                        単につなぐだけじゃない。<br>
+                        「手と手」を取り合っていけるような、<br>
+                        持続可能な社会を、一緒に作りませんか？
+                    </h4>
+                </div>
+
+
+                <button class="view-more-btn">
+                    <a href="about-us.html">
+                        <p class="f-viga">VIEW MORE</p>
+                        <div class="arrow1">
+
+                        </div>
+                    </a>
+                </button>
+
+            </div>
+        </div>
+        <!---------  人を知る　--------->
+        <section>
+            <div class="overflow-wrapper">
+                <div class="member section-wrapper" id="staff">
+                    <div class="f-poppins back-text">MEMBER</div>
+                    <h3 class="fpc52sp32"><span class="underline">人</span>を知る</h3>
+                    <div class="f16">TETOTEの社員がどういった信念を持って働いているのか、<br>
+                        一日のスケジュールや仕事内容などを紹介します。</div>
+
+                    <!-- メンバースライダー -->
+                    <div class="member-slider-wrapper">
+                        <div class="slider member-slider ">
+
+                            <div class="slide-item-box">
+                                <div class="slide_img">
+                                    <img src="images/syain1.jpeg" alt="">
+                                </div>
+                                <div class="message-line1">
+                                    <p class="fpc20sp16">
+                                        <span class="back-gold">「あなたが担当で良かった」</span><br>
+                                        <span class="back-gold">この一言が、最高のやりがい</span>
+                                    </p>
+                                </div>
+                                <div class="message-line2">
+                                    <p class="member-division fpc16sp12 ">コンサルタント</p>
+                                    <p class="member-year fpc16sp12 ">2011年入社</p>
+                                </div>
+                                <p class="member-name fpc24sp20">
+                                    西村 優
+                                </p>
+
+                            </div>
+                            <div class="slide-item-box">
+                                <div class="slide_img">
+                                    <img src="images/syain2.jpeg" alt="">
+                                </div>
+
+                                <div class="message-line1">
+                                    <p class="fpc20sp16">
+                                        <span class="back-gold">「あなたが担当で良</span><br>
+                                        <span class="back-gold">この一言が、最高のやりがいあ</span>
+                                    </p>
+                                </div>
+                                <div class="message-line2">
+                                    <p class="member-division fpc16sp12 ">コンサルタント</p>
+                                    <p class="member-year fpc16sp12 ">2011年入社</p>
+                                </div>
+                                <p class="member-name fpc24sp20">
+                                    橋本 拓也
+                                </p>
+
+                            </div>
+                            <div class="slide-item-box">
+                                <div class="slide_img">
+                                    <img src="images/syain3.jpeg" alt="">
+                                </div>
+
+                                <div class="message-line1">
+                                    <p class="fpc20sp16">
+                                        <span class="back-gold">「あなたが担当で良かった」</span><br>
+                                        <span class="back-gold">この一言が、最高のやりがい</span>
+                                    </p>
+                                </div>
+                                <div class="message-line2">
+                                    <p class="member-division fpc16sp12 ">コンサルタント</p>
+                                    <p class="member-year fpc16sp12 ">2011年入社</p>
+                                </div>
+                                <p class="member-name fpc24sp20">
+                                    西村 優3
+                                </p>
+
+                            </div>
+                            <div class="slide-item-box">
+                                <div class="slide_img">
+                                    <img src="images/syain4.jpeg" alt="">
+                                </div>
+
+                                <div class="message-line1">
+                                    <p class="fpc20sp16">
+                                        <span class="back-gold">「あなたが担当で良かった」</span><br>
+                                        <span class="back-gold">この一言が、最高のやりがい</span>
+                                    </p>
+                                </div>
+                                <div class="message-line2">
+                                    <p class="member-division fpc16sp12 ">コンサルタント</p>
+                                    <p class="member-year fpc16sp12 ">2011年入社</p>
+                                </div>
+                                <p class="member-name fpc24sp20">
+                                    西村 優4
+                                </p>
+
+                            </div>
+                            <div class="slide-item-box">
+                                <div class="slide_img">
+                                    <img src="images/syain5.jpeg" alt="">
+                                </div>
+
+                                <div class="message-line1">
+                                    <p class="fpc20sp16">
+                                        <span class="back-gold">「あなたが担当で良かった」</span><br>
+                                        <span class="back-gold">この一言が、最高のやりがい</span>
+                                    </p>
+                                </div>
+                                <div class="message-line2">
+                                    <p class="member-division fpc16sp12 ">コンサルタント</p>
+                                    <p class="member-year fpc16sp12 ">2011年入社</p>
+                                </div>
+                                <p class="member-name fpc24sp20">
+                                    西村 優5
+                                </p>
+
+                            </div>
+                            <div class="slide-item-box">
+                                <div class="slide_img">
+                                    <img src="images/syain6.jpeg" alt="">
+                                </div>
+
+                                <div class="message-line1">
+                                    <p class="fpc20sp16">
+                                        <span class="back-gold">「あなたが担当で良かった」</span><br>
+                                        <span class="back-gold">この一言が、最高のやりがい</span>
+                                    </p>
+                                </div>
+                                <div class="message-line2">
+                                    <p class="member-division fpc16sp12 ">コンサルタント</p>
+                                    <p class="member-year fpc16sp12 ">2011年入社</p>
+                                </div>
+                                <p class="member-name fpc24sp20">
+                                    西村 優6
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class="member-slider-bottom">
+                            <button class="view-more-btn">
+                                <a href="staf.html">
+                                    <p class="f-viga">VIEW MORE</p>
+                                    <div class="arrow1">
+                                        <!-- <img src="images/arrow-1-black.png"> -->
+                                    </div>
+                                </a>
+                            </button>
+
+                            <div class="arrow_box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- 制度環境を知る --------->
+        <section>
+            <div class="benefits section-wrapper text-center" id="benefits">
+                <div class="f-poppins back-text">BENEFITS</div>
+                <h3 class="fpc52sp32"><span class="underline">制度・環境</span>を知る</h3>
+                <div class="f16">当社では働く従業員とそのご家族が健やかに過ごせるよう、多様な研修、福利厚生を提供しています。</div>
+
+                <div class="benefits-container-box">
+                    <div class="benefits-container career">
+                        <p class="viga benefit-font1">Traning And Career</p>
+                        <div class="cercle">
+                            <img src="images/career.png">
+                        </div>
+
+                        <div class="next-arrow">
+                            <a href="benefits.html">
+                                <img src="images/arrow-2-white.png" alt="next button">
+                            </a>
+                        </div>
+
+                        <p class="back-gold benefit-font2">研修制度とキャリアパス</p>
+                        <p class="f16">個々の目標に合わせたキャリアパスを支える、豊富な研修メニューで、あなた自身の成長を強力にサポートします。</p>
+                    </div>
+                    <div class="benefits-container welfare">
+                        <p class="viga benefit-font1">employee benefits</p>
+                        <div class="cercle">
+                            <img src="images/welfare.png">
+                        </div>
+
+                        <div class="next-arrow">
+                            <a href="carrer.html">
+                                <img src="images/arrow-2-white.png" alt="next button">
+                            </a>
+                        </div>
+
+                        <p class="back-gold benefit-font2">福利厚生</p>
+                        <p class="f16">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- 採用  --------->
+
+        <div class="recruitment " id="recruitment">
+            <!-- ブログ -->
+            <div class="recruitment-blog section-wrapper" id="recruitment-blog">
+                <div class="f-poppins back-text">BLOG</div>
+                <h3 class="fpc52sp32">採用ブログ</h3>
+                <div class="recruitment-arrow-box">
+                    <div class="next-arrow">
+                        <a href="blog.html">
+                            <img src="images/arrow-2.png" alt="next button">
+                        </a>
+                    </div>
+                    <a href="blog.html">
+                        <p class="f-viga">VIEW MORE</p>
+                    </a>
+                </div>
+                <div class="f16">採用情報やイベント情報、社員の紹介など、<br>
+                    日々の現場の様子をご紹介します。</div>
+                <div class="blog-wrapper">
+                    <div class="blog-contents-box">
+                        <div class="blog-content-left">
+                            <div class="blog-img">
+                                <img src="images/blog1.jpeg">
+                            </div>
+                        </div>
+                        <div class="blog-content-right">
+                            <div class="category">
+                                <div class="category-icon fps14sp12">
+                                    <img src="images/category-icon.png">
+
+                                </div>
+                                社内研修
+                            </div>
+                            <div class="blog-title fpc18sp14">
+                                <a href="blog-detail.html">新入社員向けに、入社前研修を行いました。</a>
+                            </div>
+                            <div class="blog-date f12">
+                                2025.03.25
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="blog-contents-box">
+
+                    </div>
+                    <div class="blog-contents-box">
+
+                    </div>
+                    <div class="blog-contents-box">
+
+                    </div>
+                </div>
+
+            </div>
+
+            </section>
+            <!-- 採用情報 -->
+            <section>
+                <div class="overflow-wrapper">
+                    <div class="recruitment-info section-wrapper text-center" id="recruitment-info">
+                        <div class="f-poppins back-text">RECRUITMENT</div>
+                        <h3 class="fpc52sp32">採用情報</h3>
+                        <div class="f16">募集要項（職種、業務内容、応募条件、選考フロー）とよくある質問・会社概要などをまとめています。</div>
+
+                        <div class="recruitment-container-box f20">
+                            <div class="recruitment-container container-50pro back-white">
+                                <a href="detail.html">
+                                    募集要項
+                                    <div class="arrow1">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="recruitment-container container-50pro back-white">
+                                <a href="faq.html">
+                                    よくある質問
+                                    <div class="arrow1">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="recruitment-container back-white">
+                                <a href="about-us.html">
+                                    会社概要
+                                    <div class="arrow1">
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+
+
+
+
+    </main>
+    <!--------- footer --------->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-img">
+                <picture>
+
+                    <!-- ブラウザ幅428pxまでsampleの画像が表示 -->
+                    <source srcset="images/footer.jpg" media="(min-width: 428px)" type="image/png">
+                    <!-- ブラウザ幅427px～から最小幅までsample2の画像が表示 -->
+                    <img src="images/footer-bg.jpg" alt=”代替テキスト”>
+                </picture>
+
+            </div>
+            <div class="entry-wrapper">
+                <p class="entry-message fpc16sp14"> わたしたちと一緒に働く仲間を募集中です。<br>
+                    少数精鋭のチームで、<br>
+                    あなたも会社も一緒に成長していきましょう。</p>
+                <button class="footer-entry-btn back-gold button">
+                    <a href="entry.html">
+                        <p class="fpc16sp14 f-viga">ENTRY</p>
+                        <div class="arrow1"></div>
+                    </a>
+                </button>
+            </div>
+            <div class="footer-nav-wrapper back-beige">
+
+                <nav class="footer-navigation">
+                    <ul class="footer-nav-list fpc16sp14">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about-us.html">TETOTEについて</a></li>
+                        <li><a href="staff.html">人を知る</a></li>
+                        <li><a href="carrer.html">研修制度とキャリアパス</a></li>
+                        <li><a href="benefits.html">福利厚生</a></li>
+                        <li><a href="blog.html">採用ブログ</a></li>
+                        <li><a href="detail.html">募集要項</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="about-us.html#company">会社概要</a></li>
+
+
+                    </ul>
+                </nav>
+                <div class="sns-icon-box">
+                    <div class="sns-icon"><img src="images/facebook.png" alt="facebookのアイコン"></div>
+                    <div class="sns-icon"><img src="images/twitter.png" alt="X twitterのアイコン "></div>
+                    <div class="sns-icon"><img src="images/youtube.png" alt="youtubeのアイコン"></div>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="images/tetote-logo-black.png">
+                    </a>
+                </div>
+                <div class="right-reserve">© 2024 TETOTE All Right Reserved.</div>
+
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- JQUERY  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- slick -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="テクノロジーで社会課題を解決する。AIやビッグデータ分析などの技術を活用した社会課題解決サービスを提供するTETOTEの採用サイト。">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- ファビコン-->
+    <link rel="icon" href="/favicon.ico" id="favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins&family=Viga&display=swap"
+        rel="stylesheet">
+
+    <!-- slick css -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <!-- <link href="css/slick-theme.css" rel="stylesheet" type="text/css"> -->
+
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media2.css">
+
+
+    <title>社員ブログ | 株式会社TETOTE</title>
+</head>
+
+<body class="page">
+    <header>
+        <div class="header-wrapper">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/tetote-logo.png" class="logo-white" alt="tetoteロゴマーク">
+                        <img src="images/tetote-logo-black.png" class="logo-black" alt="tetoteロゴマーク">
+                    </a>
+                </div>
+
+            </div>
+            <div class="header-right">
+                <div class="header-btn-box">
+                    <button class="recruiting-criteria-btn  back-black button">
+                        <a href="detail.html">
+                            <p class="f14">募集要項</p>
+                        </a>
+                    </button>
+                    <button class="entry-btn back-gold button">
+                        <a href="entry.html">
+
+                            <p class="f14 f-viga">ENTRY</p>
+                        </a>
+                    </button>
+                </div>
+
+                <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu"
+                    aria-expanded="false" aria-label="メニューを開閉する">
+                    <span class="hamburger__line">
+                    </span>
+                    <span class="hmb_text f-viga fpc12sp10">MENU</span>
+                </button>
+
+            </div>
+            <!-- navigation -->
+            <div class="global-navigation" id="js-global-menu" aria-hidden="true">
+                <div class="nav-top-logo nav-logo">
+                    <a href="index.html">
+
+                        <img src="images/tetote-logo-black.png">
+                    </a>
+                </div>
+
+                <div class="nav-left">
+                    <div class="nav-logo">
+                        <a href="index.html">
+                            <img src="images/tetote-logo-black.png">
+                        </a>
+                    </div>
+                </div>
+                <!-- pc nav  -->
+                <nav class="pc-nav-right">
+                    <ul class="pc-nav-container">
+                        <div class="pc-nav-wrap">
+
+                            <li class="list-item">
+                                <a href="about.html">
+                                    <p>
+                                        <span class="fpc32sp18">ABOUT US</span><br>
+                                        <span class="fpc16sp12">TETOTEについて</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="staff.html">
+                                    <p>
+                                        <span class="fpc32sp18">STAFF</span><br>
+                                        <span class="fpc16sp12">社員について</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="blog.html">
+                                    <p>
+                                        <span class="fpc32sp18">BLOG</span><br>
+                                        <span class="fpc16sp12">採用ブログ</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="pc-nav-wrap">
+                            <li class="list-item">
+                                <a href="benefits.html">
+                                    <p>
+                                        <span class="fpc32sp18">BENEFITS</span><br>
+                                        <span class="fpc16sp12">福利厚生について</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="carrer.html">
+                                    <p>
+                                        <span class="fpc32sp18">CARRER</span><br>
+                                        <span class="fpc16sp12">研修制度とキャリアパス</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="faq.html">
+                                    <p>
+                                        <span class="fpc32sp18">FAQ</span><br>
+                                        <span class="fpc16sp12">よくある質問</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="nav-btn-box">
+                        <li class="pc-nav-wrap list-item">
+                            <button class="nav-recruiting-criteria-btn  back-black button">
+                                <a href="detail.html">
+                                    <p class="f14">募集要項</p>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="pc-nav-wrap list-item">
+                            <button class="nav-entry-btn back-gold button">
+                                <a href="entry.html">
+                                    <p class="f14 f-viga">ENTRY</p>
+                                </a>
+                            </button>
+                        </li>
+                    </div>
+                </nav>
+                <!-- sp nav -->
+                <nav class="sp-nav-right">
+                    <ul class="sp-nav-container">
+                        <li class="list-item">
+                            <a href="about.html">
+                                <p>
+                                    <span class="fpc32sp18">ABOUT US</span><br>
+                                    <span class="fpc16sp12">TETOTEについて</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="staff.html">
+                                <p>
+                                    <span class="fpc32sp18 ">STAFF</span><br>
+                                    <span class="fpc16sp12">社員について</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="blog.html">
+                                <p>
+                                    <span class="fpc32sp18 f-viga">BLOG</span><br>
+                                    <span class="fpc16sp12">採用ブログ</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="benefits.html">
+                                <p>
+                                    <span class="fpc32sp18">BENEFITS</span><br>
+                                    <span class="fpc16sp12">福利厚生について</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="carrer.html">
+                                <p>
+                                    <span class="fpc32sp18">CARRER</span><br>
+                                    <span class="fpc16sp12">研修制度とキャリアパス</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="faq.html">
+                                <p>
+                                    <span class="fpc32sp18">FAQ</span><br>
+                                    <span class="fpc16sp12">よくある質問</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav-btn-box">
+                        <li class="list-item">
+                            <button class="nav-recruiting-criteria-btn  back-black button">
+                                <a href="detail.html">
+                                    <p class="f14">募集要項</p>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="list-item">
+                            <button class="nav-entry-btn back-gold button">
+                                <a href="entry.html">
+                                    <p class="f14 f-viga">ENTRY</p>
+                                </a>
+                            </button>
+                        </li>
+                    </div>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <!--------- 個別ページファーストビュー --------->
+        <div class="page-fv-wrapper" id="about-us">
+            <div class="page-fv-img">
+                <img src="images/about-fv 1.jpg">
+            </div>
+            <div class="page-fv-textbox">
+                <h1 class="page-title fpc64sp45 back-white f-viga">ABOUT US</h1>
+                <p class="page-subtitle fpc24sp12 back-white">TETOTEについて</p>
+                <p class="page-description fpc16sp14 back-white">私たちの理念を紹介をします。</p>
+            </div>
+
+        </div>
+        <!-- パンくずリスト -->
+        <div class="breadcrumb-wrapper">
+            <div class="breadcrumb fps14sp12">
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <!-- 1つめ -->
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="index.html">
+                            <span itemprop="home">TOP</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    <!-- 2つめ -->
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="#">
+                            <span itemprop="blog">社員ブログ</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+    <!--------- footer --------->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-img">
+                <img src="images/footer.jpg">
+            </div>
+            <div class="entry-wrapper">
+                <p class="entry-message fpc16sp14"> わたしたちと一緒に働く仲間を募集中です。<br>
+                    少数精鋭のチームで、<br>
+                    あなたも会社も一緒に成長していきましょう。</p>
+                <button class="footer-entry-btn back-gold button">
+                    <a href="entry.html">
+                        <p class="fpc16sp14 f-viga">ENTRY</p>
+                        <div class="arrow1"></div>
+                    </a>
+                </button>
+            </div>
+            <div class="footer-nav-wrapper back-beige">
+
+                <nav class="footer-navigation">
+                    <ul class="footer-nav-list fpc16sp14">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about-us.html">TETOTEについて</a></li>
+                        <li><a href="staff.html">人を知る</a></li>
+                        <li><a href="carrer.html">研修制度とキャリアパス</a></li>
+                        <li><a href="benefits.html">福利厚生</a></li>
+                        <li><a href="blog.html">採用ブログ</a></li>
+                        <li><a href="detail.html">募集要項</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="about-us.html#company">会社概要</a></li>
+
+
+                    </ul>
+                </nav>
+                <div class="sns-icon-box">
+                    <div class="sns-icon"><img src="images/facebook.png" alt="facebookのアイコン"></div>
+                    <div class="sns-icon"><img src="images/twitter.png" alt="X twitterのアイコン "></div>
+                    <div class="sns-icon"><img src="images/youtube.png" alt="youtubeのアイコン"></div>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="images/tetote-logo-black.png">
+                    </a>
+                </div>
+                <div class="right-reserve">© 2024 TETOTE All Right Reserved.</div>
+
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- JQUERY  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- slick -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,816 @@
+@charset "utf-8";
+
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+@media screen and (max-width: 1078px) {
+  .nav-left {
+    display: none;
+  }
+
+  .pc-nav-right {
+    width: 90%;
+    border-left: none;
+  }
+
+  .pc-nav-container {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .nav-btn-box {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .arrow_box {
+    display: none;
+  }
+
+  /* セクション */
+
+  /* 見出しバックテキストの位置調整 */
+  .member .back-text {
+    left: 0;
+  }
+
+  /* ブログ */
+  .blog-wrapper {
+
+    margin-top: 50px;
+    gap: initial;
+  }
+
+  .blog-contents-box {
+
+
+    width: 452px;
+    height: 180px;
+
+
+    margin-bottom: 23px;
+  }
+
+  .blog-content-left {
+    width: 156px;
+
+  }
+
+  .blog-content-right {
+    margin: 20px 23px;
+    display: grid;
+    grid-template-rows: 37px 91px 12px;
+
+  }
+
+  /* footer */
+  .entry-wrapper {
+    height: calc(310vw / 14.4);
+    top: calc(333vw / 14.4);
+  }
+
+  .footer-nav-wrapper {
+    height: calc(490vw / 14.4);
+  }
+
+  .footer-nav-wrapper .nav-logo {
+    position: absolute;
+    top: calc(198vw/14.4);
+    left: calc(78vw/14.4);
+    width: calc(251vw/14.4);
+  }
+
+  .footer-navigation {
+    position: absolute;
+    top: calc(199vw / 14.4);
+    right: calc(78vw / 14.4);
+  }
+
+  .footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(685vw/14.4);
+    font-weight: 700;
+  }
+
+  .footer-nav-list li {
+    margin-right: 22px;
+    margin-bottom: calc(24vw/14.4);
+  }
+
+  .right-reserve {
+    position: absolute;
+    bottom: calc(45vw/14.4);
+    left: calc(78vw/14.4);
+  }
+
+  .sns-icon-box {
+    position: absolute;
+    display: flex;
+    bottom: calc(45vw/14.4);
+    right: calc(78vw/14.4);
+  }
+
+  /* ///////////社員についてページ////////////// */
+
+
+  .staff-item-container {
+
+    width: 86vw;
+
+  }
+
+  .page-section-wrapper {
+    width: 86vw;
+  }
+
+
+}
+
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+@media screen and (max-width: 768px) {
+
+  /* ◆◆◆ header ◆◆◆ */
+  .header-wrapper {
+    height: 56px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-right {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .header-btn-box {
+    display: none;
+  }
+
+  .logo {
+    width: 151px;
+    margin: 0 12px;
+  }
+
+  /*  ---- ハンバーガーボタン ---- */
+  .humburer_box {
+    width: 56px;
+    height: 45px;
+  }
+
+  .hamburger {
+    width: 32px;
+    height: 36px;
+    margin: 0 12px;
+  }
+
+  .hamburger__line {
+    top: 9px;
+    width: 32px;
+  }
+
+  .hamburger__line::before {
+    top: -9px;
+  }
+
+  .hamburger__line::after {
+    top: 9px;
+  }
+
+  /*  ---- ハンバーガーボタン　ここまで ---- */
+
+  /* ---- ヘッダー追従 ---- */
+  .header-wrapper--sticky {
+    height: 56px;
+  }
+
+  /* ----追従ここまで---- */
+
+  /*   navigation*/
+  .pc-nav-right {
+    padding: 0 12px;
+  }
+
+  .pc-nav-container {
+    width: 100%;
+  }
+
+  .nav-btn-box {
+    width: 100%;
+  }
+
+  .nav-top-logo {
+    top: 8px;
+    left: 12px;
+  }
+
+  .nav-logo {
+    width: 151px;
+    margin: 0 12px;
+  }
+
+  .pc-nav-wrap {
+    min-width: 150px;
+    margin: 0 12px;
+  }
+
+  /* first view */
+  .slogan-jp {
+    position: absolute;
+    top: 82.16%;
+
+    width: 60.8%;
+    height: 30px;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .new-topic-contaiter {
+    position: absolute;
+    left: 50%;
+    bottom: 1.5%;
+    transform: translateX(-50%);
+    width: 93.6%;
+    align-items: center;
+  }
+
+  .new-topic-left {
+    width: 14.8%;
+  }
+
+  .new-topic-right {
+    width: 84.2%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    line-height: 1.2;
+  }
+
+  .topic-view-more {
+    display: none;
+  }
+
+
+
+  /* second view */
+  /*==// スライダー //==*/
+  .slide-catch {
+    bottom: -31px;
+  }
+
+  .slide-catch span {
+    margin-bottom: 8px;
+  }
+
+  .slider {
+    margin: 41px auto 0 auto;
+  }
+
+
+  .slide-item {
+    margin: 0 8px;
+  }
+
+  .slider .slick-center {
+    margin-top: 27px;
+  }
+
+
+  /* 理念　人手不足 */
+  .philosophy-wrapper {
+    width: 92%;
+    margin: 79px auto 0 auto;
+    padding-bottom: 18.9vw;
+  }
+
+  .philosophy-container {
+    line-height: 2.5;
+    margin: 0 auto 39px auto;
+  }
+
+  .view-more-btn {
+    width: 277px;
+    height: 62px;
+    font-size: 16px;
+    position: relative;
+  }
+
+  /* .view-more-btn .arrow1 {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 17px;
+  } */
+
+  /* *** ボタン内　＞　矢印　*** */
+  .arrow1 {
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #222222;
+    border-right: 3px solid #222222;
+
+    position: absolute;
+    right: 29px;
+
+  }
+
+  /* ホバー */
+  .view-more-btn:hover {
+    background-color: #222222;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+  }
+
+  .view-more-btn:hover .arrow1 {
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+
+  }
+
+  /* ◆◆◆◆◆◆◆◆◆◆◆◆◆ section 共通 ◆◆◆◆◆◆◆◆◆◆◆◆◆ */
+  /* ◆◆◆◆◆◆◆◆◆◆◆◆◆ 人を知る ◆◆◆◆◆◆◆◆◆◆◆◆◆ */
+
+  /*==// スライダーのコンテナ //==*/
+  .member-slider-wrapper {
+    margin-top: 50px;
+  }
+
+  .member-slider {
+    /* width: 100%; */
+    width: 93vw;
+
+  }
+
+  .slide-item-box {
+    margin-left: 23px;
+    width: 246px;
+  }
+
+  .slide_img {
+    height: 311px;
+  }
+
+  .message-line1 {
+    /* 14文字まで */
+    position: absolute;
+    top: 67.8%;
+  }
+
+  .slide-item-box:nth-child(even) {
+    margin-top: 36px;
+  }
+
+  .message-line1 .back-gold {
+    display: inline-block;
+    padding: 7px;
+  }
+
+  .message-line2 {
+    margin: 31px 0 14px 0;
+  }
+
+  .member-division {
+    margin-right: 13px;
+  }
+
+
+
+  .member-slider-bottom {
+
+    height: 62px;
+    margin-top: 64px;
+  }
+
+  /* ◆◆◆◆◆◆◆◆◆◆◆◆◆ 制度環境を知る ◆◆◆◆◆◆◆◆◆◆◆◆◆ */
+  .benefits-container-box {
+    display: block;
+  }
+
+  .benefits-container {
+    position: relative;
+    width: 251px;
+    height: auto;
+    margin: 51px auto;
+  }
+
+  .cercle {
+    width: 251px;
+    height: 251px;
+    display: grid;
+
+  }
+
+  .benefits-container .benefit-font1 {
+    font-size: calc(14 / 16 * 1rem);
+    position: absolute;
+    right: 13px;
+  }
+
+  .benefits-container .next-arrow {
+
+    width: 42px;
+    height: 42px;
+
+    top: 170px;
+    right: 13px;
+
+  }
+
+  .benefits-container .next-arrow img {
+    width: 16px;
+
+  }
+
+  .benefits-container .benefit-font2 {
+    font-size: calc(24 / 16 * 1rem);
+    top: 228px;
+    padding: 7px;
+  }
+
+  .benefits-container .f16 {
+    margin-top: 36px;
+  }
+
+  .career .cercle img {
+
+    width: 194px;
+  }
+
+  .welfare .cercle img {
+
+    width: 202px;
+  }
+
+  /* ブログ */
+
+  .recruitment-arrow-box {
+    position: absolute;
+
+    bottom: 0;
+
+    top: inherit;
+    width: 157px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .blog-wrapper {
+    margin-top: 43px;
+    padding-bottom: 110px;
+  }
+
+  .blog-contents-box {
+    display: flex;
+    width: 341px;
+    height: 121px;
+    margin-bottom: 9px;
+  }
+
+  .blog-content-left {
+    width: 121px;
+
+  }
+
+  .blog-content-right {
+    margin: 8px 18px;
+    display: grid;
+    grid-template-rows: 25px 70px 12px;
+
+  }
+
+  .category-icon {
+    width: 14px;
+    height: 14px;
+
+  }
+
+  /* 採用情報 */
+  .recruitment-container-box {
+
+    margin-top: 28px;
+    margin-bottom: 88px;
+
+  }
+
+  .recruitment-container {
+    width: 100%;
+    height: 86px;
+    margin-bottom: 19px;
+
+  }
+
+  .container-50pro {
+    width: 100%;
+  }
+
+  /* ◆◆◆◆◆◆◆◆◆◆◆◆◆ footer◆◆◆◆◆◆◆◆◆◆◆◆◆ */
+  .footer-wrapper {
+    padding-bottom: 0;
+    position: relative;
+    text-align: center;
+
+  }
+
+  .footer-img {
+    height: 250px;
+
+    overflow: hidden;
+
+  }
+
+  .footer-img img {
+    width: -webkit-fill-available;
+    max-width: -webkit-fill-available;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+
+
+  .entry-wrapper {
+    position: absolute;
+    top: 132px;
+    width: 91.4%;
+    height: 236px;
+    line-height: 2.5;
+  }
+
+  .entry-wrapper p {
+    margin-bottom: 0;
+  }
+
+  .footer-entry-btn {
+    width: 200px;
+
+    margin-top: 24px;
+
+  }
+
+  .footer-nav-wrapper {
+    position: static;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    padding-bottom: 24px;
+  }
+
+  .footer-nav-wrapper .nav-logo {
+    position: static;
+
+    width: 251px;
+    margin: 29px auto 44px auto;
+
+  }
+
+  .footer-navigation {
+    position: static;
+    padding-top: 169px;
+
+
+  }
+
+  .footer-nav-list {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: 700;
+
+  }
+
+  .footer-nav-list li {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .right-reserve {
+    position: static;
+
+
+  }
+
+  .sns-icon-box {
+    position: static;
+    display: flex;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+
+  /* ///////個別ページ//////// */
+  .page-fv-wrapper {
+
+    margin-top: 56px;
+
+  }
+
+  .page-fv-img {
+    height: 225px;
+
+  }
+
+  .page-fv-textbox {
+
+    top: 45px;
+
+  }
+
+  .breadcrumb-wrapper {
+    height: 30px;
+  }
+
+  /* ///////////社員についてページ////////////// */
+  .staff-item-container {
+
+    width: 91%;
+    margin: 70px auto;
+    justify-content: space-around;
+
+  }
+
+  .staff-item-box {
+    margin-left: 23px;
+    width: 246px;
+  }
+
+  /* ////////社員についてページ-個別////// */
+  .page-side-bar {
+    display: none;
+  }
+
+  .page-section-wrapper {
+    width: 91%;
+  }
+
+  .staff-detail-inner {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 60px;
+
+  }
+
+
+  /* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+  /* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+  @media screen and (max-width: 428px) {
+    .global-navigation {
+      height: 100dvh;
+    }
+
+    .sp-nav-container {
+      width: 100%;
+      margin-top: 91px;
+      padding: 0 12px;
+    }
+
+    .pc-nav-right {
+      display: none;
+    }
+
+    .sp-nav-right {
+      display: inline;
+      width: 100%;
+      height: 100%;
+    }
+
+    .nav-recruiting-criteria-btn,
+    .nav-entry-btn {
+      width: 248px;
+    }
+
+    .nav-btn-box {
+      margin-top: 9.81%;
+      margin-left: 12px;
+      justify-content: start;
+    }
+
+    .nav-btn-box .list-item {
+      margin-bottom: 2.41%;
+      min-height: 42px;
+    }
+
+    /* first view */
+    .slide_pic:nth-of-type(1) {
+      object-position: 75%;
+    }
+
+    .slogan-en {
+      position: absolute;
+      top: 62.07%;
+      left: 3.2%;
+    }
+
+    .philosophy-wrapper {
+
+      padding-bottom: 20px;
+    }
+
+    /* second view */
+
+    /* ◆◆◆◆◆◆◆◆◆◆◆◆◆ section 共通 ◆◆◆◆◆◆◆◆◆◆◆◆◆ */
+    .section-wrapper {
+      width: 91%;
+      padding-top: 54px;
+
+    }
+
+    .back-text {
+      position: absolute;
+      /* top: 45px; */
+      top: 54px;
+    }
+
+    .section-wrapper .f16 {
+      margin-top: 43px;
+    }
+
+    /* 見出しバックテキストの位置調整 */
+    .recruitment-info .back-text,
+    .benefits .back-text {
+      left: 0;
+      transform: inherit;
+
+    }
+
+    .member .back-text {
+      left: 0;
+
+    }
+
+
+    /* 見出しの調整 */
+    h3 {
+      /* padding-top: 87px; */
+      padding-top: 24px;
+    }
+
+    .text-center {
+      text-align: left;
+      /* 人を知る、採用ブログは中央 */
+    }
+
+    .member .fpc52sp32,
+    .recruitment-blog .fpc52sp32 {
+
+      padding-left: 0;
+
+    }
+
+    .underline {
+      border-bottom: 2px solid #222222;
+    }
+
+    /* ◆◆◆◆◆◆◆◆◆◆◆◆◆ 人を知る ◆◆◆◆◆◆◆◆◆◆◆◆◆ */
+
+
+
+    /* ブログ */
+    .recruitment-arrow-box {
+      left: 2.36vw;
+    }
+
+    .blog-content-right {
+      grid-template-rows: 21px 74px 12px;
+
+    }
+
+    .category-icon {
+      width: 12px;
+    }
+
+    /* footer */
+    .footer-img img {}
+
+    /*  /////社員についてページー個別/////*/
+    .staff-detail-inner {
+      width: 100%;
+      padding-top: 40px;
+    }
+
+    #staff-detail-page h2 {
+      margin-bottom: 35px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+  }

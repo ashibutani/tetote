@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+@media screen and (max-width: 1078px) {
+  .pc-nav-left {
+    display: none;
+  }
+
+  .pc-nav-right {
+    width: 90%;
+    border-left: none;
+  }
+
+  .pc-nav-container {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .nav-btn-box {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+@media screen and (max-width: 768px) {
+  /* ◆◆◆ header ◆◆◆ */
+  .header-wrapper {
+    height: 56px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-right {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .header-btn-box {
+    display: none;
+  }
+  .logo {
+    width: 151px;
+    margin: 0 12px;
+}
+
+  /*  ---- ハンバーガーボタン ---- */
+  .humburer_box {
+    width: 56px;
+    height: 45px;
+  }
+
+  .hamburger {
+    width: 32px;
+    height: 36px;
+    margin: 0 12px;
+  }
+
+  .hamburger__line {
+    top: 9px;
+    width: 32px;
+  }
+
+  .hamburger__line::before {
+    top: -9px;
+  }
+
+  .hamburger__line::after {
+    top: 9px;
+  }
+
+  /*  ---- ハンバーガーボタン　ここまで ---- */
+
+  /* ---- ヘッダー追従 ---- */
+  .header-wrapper--sticky {
+    height: 56px;
+  }
+  /* ----追従ここまで---- */
+
+  /*   navigation*/
+  .pc-nav-right {
+    padding: 0 12px;
+  }
+  .pc-nav-container {
+    width: 100%;
+  }
+  .nav-btn-box {
+    width: 100%;
+  }
+  .nav-top-logo {
+    top: 8px;
+    left: 12px;
+  }
+
+  .nav-logo {
+    width: 151px;
+    margin: 0 12px;
+  }
+
+  .pc-nav-wrap {
+    min-width: 150px;
+    margin: 0 12px;
+  }
+}
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+/* ---◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇---- */
+@media screen and (max-width: 428px) {
+    .pc-nav-container {
+        width: 100%;
+        margin-top: 91px;
+        height: 390px;
+        
+}
+.pc-nav-right{
+    width: 100%;
+}
+.pc-nav-wrap {
+    width: 100%;
+    margin: 0;
+}
+.nav-recruiting-criteria-btn,
+.nav-entry-btn {
+    
+    width: 248px;
+    
+}
+.nav-btn-box{
+    margin-top: 53px;
+}
+.nav-btn-box .list-item {
+    
+    min-height: 42px;
+    margin-bottom: 13px;
+}
+}
