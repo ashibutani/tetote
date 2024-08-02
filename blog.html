@@ -227,14 +227,14 @@
     </header>
     <main>
         <!--------- 個別ページファーストビュー --------->
-        <div class="page-fv-wrapper" id="about-us">
+        <div class="page-fv-wrapper" id="blog">
             <div class="page-fv-img">
-                <img src="images/about-fv 1.jpg">
+                <img src="images/blog-fv.jpg">
             </div>
             <div class="page-fv-textbox">
-                <h1 class="page-title fpc64sp45 back-white f-viga">ABOUT US</h1>
-                <p class="page-subtitle fpc24sp12 back-white">TETOTEについて</p>
-                <p class="page-description fpc16sp14 back-white">私たちの理念を紹介をします。</p>
+                <h1 class="page-title fpc64sp45 back-white f-viga">BLOG</h1>
+                <p class="page-subtitle fpc24sp12 back-white">社員ブログ</p>
+                <p class="page-description fpc16sp14 back-white">採用情報やイベント情報などをご紹介します。</p>
             </div>
 
         </div>
@@ -259,6 +259,73 @@
                 </ol>
             </div>
         </div>
+        <!-- 固定ページ内容  blog-->
+        <div class="blog-page-wrapper page-section-wrapper">
+            <div class="blog-wrapper">
+                <div class="blog-contents-box back-beige">
+
+                    <div class="blog-content-left">
+                        <div class="blog-img">
+                            <img src="images/blog1.jpeg">
+                        </div>
+                    </div>
+                    <div class="blog-content-right ">
+                        <div class="category">
+                            <div class="category-icon fps14sp12">
+                                <img src="images/category-icon.png">
+
+                            </div>
+                            社内研修
+                        </div>
+                        <div class="blog-title fpc18sp14">
+                            <a href="blog-single.html">新入社員向けに、入社前研修を行いました。</a>
+                        </div>
+                        <div class="blog-date f12">
+                            2025.03.25
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="blog-contents-box back-beige">
+
+
+                </div>
+                <div class="blog-contents-box back-beige">
+
+                </div>
+                <div class="blog-contents-box back-beige">
+
+                </div>
+                <div class="blog-contents-box back-beige">
+
+                </div>
+                <div class="blog-contents-box back-beige">
+
+                </div>
+                <div class="blog-contents-box back-beige">
+
+                </div>
+                <div class="blog-contents-box back-beige">
+
+                </div>
+
+                <div class="blog-pagenation-box">
+                    <div class="pagenation-btn-number f14">
+                        <a href="blog.html">
+                            1</a>
+                    </div>
+                    <div class="pagenation-btn-number f14">
+                        <a href="blog.html">
+                            2 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
 
 
@@ -271,7 +338,14 @@
     <footer>
         <div class="footer-wrapper">
             <div class="footer-img">
-                <img src="images/footer.jpg">
+                <picture>
+
+                    <!-- ブラウザ幅428pxまでsampleの画像が表示 -->
+                    <source srcset="images/footer.jpg" media="(min-width: 428px)" type="image/png">
+                    <!-- ブラウザ幅427px～から最小幅までsample2の画像が表示 -->
+                    <img src="images/footer-bg.jpg" alt=”代替テキスト”>
+                </picture>
+
             </div>
             <div class="entry-wrapper">
                 <p class="entry-message fpc16sp14"> わたしたちと一緒に働く仲間を募集中です。<br>
@@ -289,14 +363,14 @@
                 <nav class="footer-navigation">
                     <ul class="footer-nav-list fpc16sp14">
                         <li><a href="index.html">ホーム</a></li>
-                        <li><a href="about-us.html">TETOTEについて</a></li>
+                        <li><a href="about.html">TETOTEについて</a></li>
                         <li><a href="staff.html">人を知る</a></li>
                         <li><a href="carrer.html">研修制度とキャリアパス</a></li>
                         <li><a href="benefits.html">福利厚生</a></li>
                         <li><a href="blog.html">採用ブログ</a></li>
                         <li><a href="detail.html">募集要項</a></li>
                         <li><a href="faq.html">よくある質問</a></li>
-                        <li><a href="about-us.html#company">会社概要</a></li>
+                        <li><a href="about.html#company">会社概要</a></li>
 
 
                     </ul>

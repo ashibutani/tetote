@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/media2.css">
 
 
-    <title>エントリー | 株式会社TETOTE</title>
+    <title>採用ブログ詳細ページ | 株式会社TETOTE</title>
 </head>
 
 <body class="page">
@@ -226,13 +226,10 @@
             </div>
     </header>
     <main>
-
-        <div class="blog-single-wrapper back-beige" id="entry">
-
-
+        <div class="blog-single-wrapper back-beige" id="blog-single-page">
             <!-- パンくずリスト -->
             <div class="breadcrumb-wrapper">
-                <div class="breadcrumb fps14sp12">
+                <div class="breadcrumb fpc14sp12">
                     <ol itemscope itemtype="https://schema.org/BreadcrumbList">
                         <!-- 1つめ -->
                         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -243,175 +240,106 @@
                         </li>
                         <!-- 2つめ -->
                         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a itemprop="item" href="#">
-                                <span itemprop="entry">ENTRY</span>
+                            <a itemprop="item" href="blog.html">
+                                <span itemprop="blog">BLOG</span>
                             </a>
                             <meta itemprop="position" content="2" />
+                        </li>
+                        <!-- 3つめ -->
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a itemprop="item" href="#">
+                                <span itemprop="blog">新入社員向けに、入社前研修を行いました。</span>
+                            </a>
+                            <meta itemprop="position" content="3" />
                         </li>
                     </ol>
                 </div>
             </div>
+            <!-- ブログシングルページ内容 -->
 
-            <div class="entry-inner back-white">
-
-                <!-- 問い合わせフォーム -->
-                <div class="form-wrapper">
-                    <p class="entry-line1 fpc24sp16">ENTRY FORM</p>
-                    <p class="entry-line2 fpc32sp18"><span class="font-gold">新卒・中途採用</span><span>エントリーフォーム</span></p>
-                    <p class="entry-line3 fpc16sp14">当社へ入社ご希望の方は、下記の送信フォームより送信して下さい。<br>
-                        <span class="font-gold">※</span>は必須項目になります。</p>
-                    <form
-                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScJucxP_DS7_2HVpQszU4l_fJIYgBRjCXcEjJZDbFCiK7lfUg/formResponse"
-                        method="POST" id="form2" class="fpc16sp14">
-
-
-                        <div class="form_box">
-                            <label for="name">お名前<span class="font-gold">※</span></label>
-                            <input type="text" name="entry.1659284908" id="name" placeholder="例：山田太郎" required>
-                        </div>
-                        <div class="form_box">
-                            <label for="name">お名前カナ<span class="font-gold">※</span></label>
-                            <input type="text" name="entry.1659284908" id="name" placeholder="例：ヤマダタロウ" required>
-                        </div>
-
-
-
-                        <div class="form_box">
-                            <label for="mail">メールアドレス<span class="font-gold">※</span></label>
-                            <input type="mail" name="entry.184998275" id="mail" placeholder="例：tetote@gmail.com"
-                                required>
-                        </div>
-                        <div class="form_box">
-                            <label for="phonenumber">電話番号<span class="font-gold">※</span></label>
-                            <input type="phonenumber" name="entry.184998275" id="phonenumber"
-                                placeholder="例：00-0000-0000" required>
-                        </div>
-                        <div class="form_box">
-                            <label for="phonenumber">生年月日<span class="font-gold">※</span></label>
-
-
-                            <div class="form-box">
-                                <div class="birth-box">
-
-                                    <input type="text" class="birth" name="entry.1270178505" id="" placeholder="例：2000"
-                                        autocomplete="birth-year" required>
-                                    <span>年</span>
-                                </div>
-                                <div class="birth-monthdate">
-                                    <div class="birth-box">
-                                        <input type="text" class="birth" name="entry.1270178505" id=" placeholder=" 介護"
-                                            autocomplete="birth-month" required>
-                                        <span>月</span>
-                                    </div>
-                                    <div class="birth-box">
-                                        <input type="text" class="birth" name="entry.1270178505" id=" placeholder=" 介護"
-                                            autocomplete="birth-date" required>
-                                        <span>日</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form_box">
-                            <label for="job_objective">希望職種<span class="font-gold">※</span></label>
-                            <div class="radio_box">
-                                <div class="radio_smallbox">
-                                    <input type="radio" name="entry.1370082908" value="コンサルタント" id="consulting"
-                                        required>
-                                    <label for="radio" class="sample_label">コンサルタント</label>
-                                </div>
-                                <div class="radio_smallbox">
-                                    <input type="radio" name="entry.1370082908" value="ソリューション営業" id="solution-sales"
-                                        required>
-                                    <label for="radio" class="sample_label">ソリューション営業</label>
-                                </div>
-
-                                <div class="radio_smallbox">
-                                    <input type="radio" name="entry.1370082908" value="システムエンジニア" id="system-engineer"
-                                        required>
-                                    <label for="radio" class="sample_label">システムエンジニア</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form_box">
-                            <label for="pr">自己PR<span class="font-gold">※</span></label>
-
-                            <textarea name="entry.1313599907" id="pr" required placeholder="例：志望動機、自己PR"></textarea>
+            <div class="blog-single-inner back-white">
+                <div class="blog-category-date">
+                    <div class="category">
+                        <div class="category-icon fps14sp12">
+                            <img src="images/category-icon.png">
 
                         </div>
+                        社内研修
+                    </div>
 
-                        <div class="form_box">
-                            <label for="advertisement">当社を知ったきっかけを教えて下さい。</label>
-                            <div class="radio_box">
-                                <div class="radio_smallbox">
-                                    <input type="radio" class="radio2" name="entry.1370082908" value="X(旧Twitter)"
-                                        id="Twitter" required>
-                                    <label for="radio" class="sample_label">X(旧Twitter)</label>
-                                </div>
-                                <div class="radio_smallbox">
-                                    <input type="radio" class="radio2" name="entry.1370082908" value="Facebook"
-                                        id="Facebook" required>
-                                    <label for="radio" class="sample_label">Facebook</label>
-                                </div>
-
-                                <div class="radio_smallbox">
-                                    <input type="radio" class="radio2" name="entry.1370082908" value="Instagram"
-                                        id="Instagram" required>
-                                    <label for="radio" class="sample_label">Instagram</label>
-                                </div>
-                                <div class="radio_smallbox">
-                                    <input type="radio" class="radio2" name="entry.1370082908" value="検索広告" id=""
-                                        required>
-                                    <label for="radio" class="sample_label">検索広告</label>
-                                </div>
-                                <div class="radio_smallbox">
-                                    <input type="radio" class="radio2" name="entry.1370082908" value="知人友人・親戚" id=""
-                                        required>
-                                    <label for="radio" class="sample_label">知人友人・親戚</label>
-                                </div>
-                                <div class="radio_smallbox">
-                                    <input type="radio" class="radio2" name="entry.1370082908" value="その他" id=""
-                                        required>
-                                    <label for="radio" class="sample_label">その他</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form_checkbox fpc14sp12">
-                            <input id="checkbox" class="checkbox" type="checkbox" name="entry.1590228198" value="送信内容"
-                                required>
-                            <label for="checkbox">個人情報保護方針に同意する</label>
-                        </div>
-
-                        <button type="submit2" class="submit-btn" id="button2" disabled>
-                            <p>送信する</p>
-                        </button>
-
-                    </form>
-
-                    
+                    <div class="blog-date fps14sp12">
+                        2025.03.25
+                    </div>
                 </div>
+                <div class="blog-title fpc32sp18">
+                    新入社員向けに、入社前研修を行いました。
+                </div>
+                <div class="blog-img">
+                    <img src="images/blog1.jpeg">
+                </div>
+                <p>2023年3月25日、新入社員を対象とした入社前研修を実施しました。 今回の研修では、社会人としての基礎知識やビジネスマナー、当社の事業内容や社風について学びました。
+                </p>
+                <h2>研修内容</h2>
+                <p>・挨拶、自己紹介<br>
+                    ・社会人としての心構え<br>
+                    ・ビジネスマナー<br>
+                    ・当社の事業内容 <br>
+                    ・社風<br>
+                    ・グループワーク<br>
+                    ・懇親会</p>
+                <h2>研修の様子</h2>
+                <p>研修は、座学とグループワーク、懇親会を通して行いました。 座学では、社会人としての心構えやビジネスマナーについて学びました。
+                    グループワークでは、チームで課題に取り組むことで、コミュニケーション能力や問題解決能力を向上させました。 懇親会では、社員同士が交流を深め、親睦を図りました。
+                    社員との交流を通して、当社の雰囲気にも馴染むことができたようです。</p>
 
-
-
-
-
-
+                <h2>今後の期待</h2>
+                <p>今回の研修で学んだことを活かして、新入社員の皆さんが、一人前の社会人として成長していくことを期待しています。 当社は、新入社員の皆さんが、自分の能力を最大限に発揮できる環境を提供します。
+                    ぜひ、積極的にチャレンジし、自分自身を成長させてください！</p>
             </div>
 
+
+
         </div>
+        <div class="blog-bottom-wrapper">
+            <div class="blog-prev-box">
+                <a href="">
+                    <div class="blog-prev-arraw">
+                        <img src="images/arrow02-left.png">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="blog-prev-article">
+                        <div class="blog-title fpc16sp14">内定者向け研修を行いました</div>
+                        <div class="blog-date fpc12sp10">2024.08.25</div>
+                    </div>
+                </a>
+            </div>
+            <div class="blog-next-box">
+                <a href="">
+                    <div class="blog-next-article">
+                        <div class="blog-title fpc16sp14">【新卒採用2024】エントリー受付中！</div>
+                        <div class="blog-date fpc12sp10">2024.08.25</div>
 
-
-
-
-
+                    </div>
+                </a>
+                <a href="">
+                    <div class="blog-next-arraw">
+                        <img src="images/arrow02-right.png">
+                    </div>
+                </a>
+            </div>
+        </div>
 
     </main>
     <!--------- footer --------->
     <footer>
         <div class="footer-wrapper">
             <div class="footer-img">
-                <img src="images/footer.jpg">
+                <picture>
+                    <source srcset="images/footer.jpg" media="(min-width: 428px)" type="image/png">
+                    <img src="images/footer-bg.jpg" alt=”代替テキスト”>
+                </picture>
+
             </div>
             <div class="entry-wrapper">
                 <p class="entry-message fpc16sp14"> わたしたちと一緒に働く仲間を募集中です。<br>
@@ -429,14 +357,14 @@
                 <nav class="footer-navigation">
                     <ul class="footer-nav-list fpc16sp14">
                         <li><a href="index.html">ホーム</a></li>
-                        <li><a href="about-us.html">TETOTEについて</a></li>
+                        <li><a href="about.html">TETOTEについて</a></li>
                         <li><a href="staff.html">人を知る</a></li>
                         <li><a href="carrer.html">研修制度とキャリアパス</a></li>
                         <li><a href="benefits.html">福利厚生</a></li>
                         <li><a href="blog.html">採用ブログ</a></li>
                         <li><a href="detail.html">募集要項</a></li>
                         <li><a href="faq.html">よくある質問</a></li>
-                        <li><a href="about-us.html#company">会社概要</a></li>
+                        <li><a href="about.html#company">会社概要</a></li>
 
 
                     </ul>

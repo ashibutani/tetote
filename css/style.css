@@ -5,9 +5,7 @@ img {
     width: 100%;
 }
 
-html:focus-within {
-    scroll-behavior: smooth;
-}
+
 
 a,
 button {
@@ -81,6 +79,11 @@ body {
 
 }
 
+h1,
+h2 {
+    font-weight: 700;
+}
+
 /* h1 スローガン 英語*/
 .fpc96sp48 {
     color: #FFFFFF;
@@ -114,11 +117,20 @@ body {
     font-size: clamp(1.125rem, 0.729rem + 1.69vw, 2.25rem);
 }
 
+.fpc32sp18 {
+    font-size: clamp(1.125rem, 0.817rem + 1.31vw, 2rem);
+}
+
 
 
 .fpc24sp20 {
     font-size: clamp(1.25rem, 1.162rem + 0.38vw, 1.5rem);
 }
+
+.fpc24sp16 {
+    font-size: clamp(1rem, 0.824rem + 0.75vw, 1.5rem);
+}
+
 
 
 
@@ -171,7 +183,7 @@ body {
 
 
 
-.fps14sp12 {
+.fpc14sp12 {
     font-size: clamp(0.75rem, 0.706rem + 0.19vw, 0.875rem);
 }
 
@@ -785,10 +797,8 @@ body {
 
 .section-wrapper {
     position: relative;
-
     width: 71.1%;
     margin: 0 auto;
-
     padding: 0 2.36vw;
 }
 
@@ -824,12 +834,7 @@ h3 {
     /* 人を知る、採用ブログは中央 */
 }
 
-.member .fpc52sp32,
-.recruitment-blog .fpc52sp32 {
-    /* padding-left: 34px; */
-    /* padding-left: 2.36vw; */
-    /* 制度環境を知る、採用情報は左よせ */
-}
+
 
 .underline {
     border-bottom: 3px solid #222222;
@@ -1063,9 +1068,8 @@ h3 {
 .blog-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 61px;
-    gap: calc(50vw/14.4);
 }
 
 .blog-contents-box {
@@ -1281,20 +1285,22 @@ h3 {
 
 .page-fv-img {
     height: 339px;
-    object-fit: cover;
     overflow: hidden;
+
 }
 
 .page-fv-img img {
-    width: inherit;
-    max-width: inherit;
+    object-fit: cover;
+    height: 339px;
 }
+
 
 .page-fv-textbox {
     position: absolute;
     z-index: 2;
     top: 75px;
     left: calc(232vw/14.4);
+    padding-right: 20px;
 }
 
 .page-fv-textbox .back-white {
@@ -1308,23 +1314,26 @@ h3 {
 
 .page-subtitle {
     padding: 3px 10px;
-    color: #988C2C;
+    color: #222222;
+
     margin-bottom: 18px;
 }
 
 .page-description {
     padding: 7px 10px;
+    color: #988C2C;
 }
 
 .breadcrumb-wrapper {
-    height: 54px;
+
     background-color: #F0F0F0;
     display: flex;
     align-items: center;
+    padding: 20px calc(232vw/14.4);
 }
 
 .breadcrumb {
-    margin-left: calc(232vw/14.4);
+
     list-style: none;
 }
 
@@ -1348,11 +1357,15 @@ h3 {
 
 .page-section-wrapper {
     width: 71.1%;
-    margin: 0 auto;
-    padding: 0 24px;
+    margin: 0 auto 139px auto;
+    padding: 0 22px;
 }
 
-/* ////////社員についてページ//////// */
+.page-h2 {
+    margin-bottom: 113px;
+}
+
+/* ////////社員について固定ページ//////// */
 
 
 .staff-item-container {
@@ -1372,11 +1385,79 @@ h3 {
     margin: 0 10px 48px 10px;
 }
 
-/* ////////社員 個別紹介ページ//////// */
+/* ////////社員についてーシングルページ//////// */
+
+.staff-single-fv-wrapper {
+    background: #FAF7F1;
+    margin-top: 118px;
+}
+
+.staff-profile-box {
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding: 3% 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.staff-profile-text {
+    width: 61.9%;
+}
+
+.staff-single-message1 span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.staff-single-message1 .fpc36sp18 {
+    margin-top: -4px;
+    margin-bottom: 24px;
+}
+
+.staff-single-message2 .member-division {
+    color: #988C2C;
+    font-weight: 700;
+    margin-top: 33px;
+    margin-bottom: 12px;
+
+}
+
+.staff-single-message2 .member-name {
+    font-weight: 700;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.staff-single-message3 {
+    line-height: 1.8;
+    margin-top: 13px;
+}
+
+.staff-single-eyecatch {
+    width: 29.3%;
+}
+
+
+
 .staff-detail-inner h2 {
     font-size: clamp(1rem, 0.824rem + 0.75vw, 1.5rem);
     font-weight: 700;
     margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.staff-detail-inner h2::before {
+    content: "";
+    width: 300px;
+    border-top: 1px solid #222222;
+    margin-right: 16px;
+    position: absolute;
+    left: -316px;
 
 }
 
@@ -1388,7 +1469,6 @@ h3 {
 }
 
 .staff-detail-inner {
-
     width: 69.3%;
     padding-top: 101px;
 
@@ -1397,7 +1477,6 @@ h3 {
 #staff-detail-page {
     display: flex;
     align-items: flex-start;
-
 }
 
 .page-side-bar {
@@ -1415,4 +1494,780 @@ h3 {
 
 .page-side-bar li {
     margin-bottom: 16px;
+}
+
+/* ////////TETOTEについて固定ページ//////// */
+.about-us-wrapper {
+    padding: 0 22px;
+    margin-top: 66px;
+
+}
+
+.important-policy-container-box {
+    margin-top: 86px;
+    margin-bottom: 125px;
+}
+
+.important-policy-container {
+    border-radius: 10px;
+    background: #FAF7F1;
+    padding: 30px 8.16%;
+    margin-bottom: 35px;
+}
+
+.policy-title-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+.policy-number {
+    width: 48px;
+    height: 48px;
+    border: solid 1px #222222;
+    border-radius: 50%;
+    line-height: 48px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 21px;
+}
+
+.policy-title {
+    width: 75%;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.policy-title span {
+    display: inline-block;
+
+}
+
+.policy-body {
+    line-height: 1.5;
+}
+
+/* 社長メッセージ */
+.ceo-message-wrapper {
+    display: flex;
+    margin: 109px auto 111px auto;
+    justify-content: space-evenly;
+}
+
+.ceo-pic {
+    width: 49.5%;
+    max-width: 484px;
+
+}
+
+.ceo-message {
+    width: 49%;
+}
+
+.ceo-message-heading {
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 18px 0 0 -4.38vw;
+}
+
+.ceo-message-body {
+    line-height: 2;
+    margin: 3.06vw 0 0 17px;
+}
+
+.ceo-message-body p {
+    margin-bottom: 2.15vw;
+}
+
+.ceo-sign {
+    width: 185px;
+    margin-top: -10px;
+
+}
+
+/* 事業紹介 */
+.business-introduction-wrapper {
+    margin-bottom: 104px;
+}
+
+.business-introduction-top {
+    margin: 44px 0 33px 0;
+    line-height: 1.5;
+    width: 70%;
+}
+
+.business-introduction-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 49px 0;
+}
+
+.business-pic {
+    width: 46.8%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.business-text-box {
+    width: 46.8%;
+}
+
+.business-heading {
+    color: #988C2C;
+    font-weight: 700;
+}
+
+.business-sub-heading {
+    font-weight: 700;
+    margin: 2.78vw 0;
+    line-height: 1.5;
+}
+
+.business-body {
+    line-height: 1.5;
+}
+
+.business-introduction-container:nth-last-child(2) {
+    border-top: 1px solid #AFA86F;
+    border-bottom: 1px solid #AFA86F;
+}
+
+/* 会社概要 */
+table {
+    width: 100%;
+    margin-top: 77px;
+    margin-bottom: 128px;
+}
+
+tr {
+    border-bottom: dotted 1px #222222;
+}
+
+th,
+td {
+    padding: 36px 0;
+}
+
+th {
+    width: 23.5%;
+}
+
+.line2 {
+    line-height: 1.5;
+}
+
+/* ////////ブログ固定ページ//////// */
+.blog-page-wrapper {
+    margin-top: 130px;
+}
+
+.back-beige {
+    background: #FAF7F1;
+
+}
+
+
+
+.blog-pagenation-box {
+    display: flex;
+    margin: 75px auto 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagenation-btn-number {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: #ffffff;
+    border: 1px solid #222222;
+    border-radius: 50%;
+    transition: all .3s ease;
+    margin: 16px;
+}
+
+.pagenation-btn-number:hover {
+    background: #222222;
+
+    color: #FFFFFF;
+
+}
+
+/* ////////ブログーシングルページ//////// */
+.blog-single-wrapper {
+    margin-top: 118px;
+    padding-bottom: 139px;
+
+}
+
+.blog-single-inner {
+    width: 55.5vw;
+    padding: 41px 40px 1px 40px;
+    margin: 34px auto 0 auto;
+}
+
+.blog-single-inner h2 {
+    font-size: clamp(1rem, 0.824rem + 0.75vw, 1.5rem);
+    font-weight: 700;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.blog-single-inner p {
+    font-size: clamp(0.875rem, 0.831rem + 0.19vw, 1rem);
+    font-weight: 400;
+    line-height: 1.75;
+    margin-bottom: 23px;
+}
+
+.blog-category-date {
+    display: flex;
+}
+
+.blog-title {
+    font-weight: 700;
+}
+
+.blog-category-date .blog-date {
+    margin-left: 19px;
+    margin-bottom: 25px;
+}
+
+.blog-single-inner .blog-img {
+    width: 100%;
+    margin-top: 41px;
+    margin-bottom: 45px;
+}
+
+.blog-bottom-wrapper {
+    display: flex;
+    background: #F0F0F0;
+    height: 96px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.blog-prev-box,
+.blog-next-box {
+    display: flex;
+    width: 35.5vw;
+    align-items: center;
+
+}
+
+.blog-prev-box {
+    justify-content: left;
+    border-right: 1px solid #222222;
+    padding-left: 3.47vw;
+}
+
+.blog-next-box {
+    justify-content: right;
+    padding-right: 3.47vw;
+}
+
+.blog-prev-article,
+.blog-next-article {
+    margin: 21px;
+
+}
+
+.blog-prev-arraw,
+.blog-next-arraw {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.blog-bottom-wrapper .blog-title {
+    margin-bottom: 6px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.blog-bottom-wrapper a {
+    display: block;
+}
+
+/* ////////福利厚生固定ページ//////// */
+.benefits-page-wrapper {
+    margin-top: 145px;
+}
+
+.user-voice-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.user-voice-container {
+    width: 47.8%;
+    margin: 23px 0 36px 0;
+}
+
+.user-year {
+    color: #988C2C;
+
+}
+
+.user-name {
+    font-weight: 700;
+    margin: 13px 0 23px 0;
+}
+
+.user-voice-body {
+    line-height: 1.8;
+}
+
+/* ////////研修制度とキャリアパス固定ページ//////// */
+
+.carrer-page-wrapper {
+    margin-top: 145px;
+}
+
+.carrerpath-img {
+    margin: 48px 0 37px 0;
+}
+
+.carrer-ex {
+    margin-top: 89px;
+}
+
+.carrer-ex dt {
+    background: #AFA86F;
+    height: 48px;
+    border-radius: 10px;
+    padding: 12px 21px;
+    display: flex;
+    align-items: center;
+}
+
+.carrer-ex dd {
+    line-height: 1.8;
+    margin: 50px 0 37px 0;
+}
+
+/* ////////研修制度とキャリアパス固定ページ//////// */
+.details-page-wrapper span {
+    display: inline-block;
+    line-height: 1.7;
+}
+
+.details-overview {
+    line-height: 1.5;
+}
+
+.details-page-wrapper {
+    margin-top: 145px;
+
+}
+
+.jump-btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px auto 97px auto;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 4.9%;
+}
+
+.jump-btn {
+    position: relative;
+    display: flex;
+    width: 294px;
+    height: 56px;
+    border-radius: 40px;
+    border: 1px solid #222222;
+    background: #FAF7F1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.jump-btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+.jump-btn-text {
+    position: relative;
+    font-size: calc(20 / 16 * 1rem);
+}
+
+.jump-btn-text::before {
+    position: absolute;
+    right: -36px;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background-image: url(../images/arrow-down.svg);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+h2::before {
+    content: '';
+    display: block;
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
+/* ////////FAQ固定ページ//////// */
+
+/* アコーディオン */
+.accordion-q {
+    margin-right: 20px;
+    font-size: clamp(1rem, 0.824rem + 0.75vw, 1.5rem);
+    color: #988C2C;
+}
+
+.accordion {
+    font-size: clamp(0.875rem, 0.831rem + 0.19vw, 1rem);
+    margin-bottom: 88px;
+}
+
+.accordion-container {
+    border-bottom: 1px solid #AFA86F;
+}
+
+.accordion-title {
+    background-color: #fff;
+    position: relative;
+    user-select: none;
+    border-top: 1px solid #AFA86F;
+    padding: 36px 20px 36px 0;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-title:last-of-type {
+    border-bottom: none;
+}
+
+.accordion-title::before,
+.accordion-title::after {
+    content: '';
+    display: block;
+    background-color: #988C2C;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+    height: 2px;
+    right: 0;
+}
+
+.accordion-title::after {
+    transform: rotate(90deg);
+    transition-duration: .1s;
+}
+
+.accordion-title.is-active {
+
+    padding-bottom: 22px;
+}
+
+.accordion-title.is-active::before {
+    opacity: 0;
+}
+
+.accordion-title.is-active::after {
+    transform: rotate(0);
+}
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-content.is-open {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 0 36px 36px 36px;
+    line-height: 1.7;
+}
+
+/* ////////エントリー固定ページ//////// */
+.entry-inner {
+    width: 61.1vw;
+    padding: 58px 4.93vw 81px 4.93vw;
+    margin: 33px auto 0 auto;
+    border-radius: 10px;
+}
+
+.font-gold {
+    color: #988C2C;
+}
+
+.entry-line1,
+.entry-line2 {
+    text-align: center;
+}
+
+.entry-line2 {
+    font-weight: 700;
+    margin: 29px 0 51px 0;
+    line-height: 1.5;
+}
+
+.entry-line3 {
+    line-height: 1.5;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.form-wrapper form {
+    margin-top: 95px;
+    padding-top: 97px;
+    border-top: 1px dotted #AFA86F;
+}
+
+.form_box {
+    display: flex;
+    margin-bottom: 27px;
+    align-items: top;
+    line-height: 1.5;
+}
+
+
+
+.form_box label {
+    width: 22.1%;
+    padding-top: 20px;
+    padding-right: 35px;
+}
+
+.form_box input {
+    width: 77.9%;
+    height: 56px;
+    border: 1px solid #AFA86F;
+    background: #FAF7F1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form_box input::placeholder,
+.form_box textarea::placeholder {
+    color: #757575;
+}
+
+.form_box textarea {
+    width: 77.9%;
+    height: 240px;
+    border: 1px solid #AFA86F;
+    background: #FAF7F1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form_box input[class="birth"] {
+    width: 11.6vw;
+}
+
+.birth-monthdate {
+    display: flex;
+}
+
+.birth-box {
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    margin-bottom: 15px;
+}
+
+.birth-box span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.radio_box {
+    width: 77.9%;
+    padding-top: 16px;
+}
+
+.form_box label[for="job_objective"],
+.form_box label[for="advertisement"] {
+    padding-top: 16px;
+}
+
+.radio_smallbox {
+    height: 23px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.form_box label[for="radio"] {
+    width: 94%;
+    margin-left: 12px;
+    padding-top: 0;
+}
+
+
+/* ラジオボタン */
+input[type="radio"] {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: sub;
+    padding: 0;
+
+}
+
+input[type="radio"]::before,
+input[type="radio"]::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+input[type="radio"]::after {
+    background-color: #222222;
+    opacity: 0;
+    /*チェックされてないradioボタンは非表示*/
+    height: 10px;
+    /*radioボタンチェック時の中点の高さ*/
+    width: 10px;
+    /*radioボタンチェック時の中点の横幅*/
+    left: 6px;
+    /*radioボタンチェック時の中点の位置*/
+}
+
+input[type="radio"]:checked::after {
+    opacity: 1;
+    /*チェックされたradioボタンは表示*/
+}
+
+
+input[class="radio2"] {
+    border-radius: 0;
+}
+
+input[class="radio2"]::before,
+input[class="radio2"]::after {
+    border-radius: 0;
+}
+
+/* チェックボックス */
+.form_checkbox {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: -11px;
+}
+
+
+/*リセット */
+input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+/* チェックボックスデザイン */
+.form_checkbox {
+    margin-top: 45px;
+    height: 16px;
+}
+
+label[for="checkbox"] {
+    margin-left: 6px;
+}
+
+input[type="checkbox"] {
+
+
+    position: relative;
+    height: 16px;
+    border: 1px solid #AFA86F;
+    background: #FAF7F1;
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+}
+
+input[type="checkbox"]::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 2px solid #222222;
+    /*チェックの太さ*/
+    border-left: 2px solid #222222;
+    /*チェックの太さ*/
+    opacity: 0;
+    /*チェック前は非表示*/
+    height: 6px;
+    /*チェックの高さ*/
+    width: 11px;
+    /*チェックの横幅*/
+    transform: rotate(-45deg);
+    top: 2px;
+    /*チェック時の位置調整*/
+    left: 2px;
+    /*チェック時の位置調整*/
+}
+
+input[type="checkbox"]:checked::after {
+    opacity: 1;
+    /*チェック後表示*/
+}
+
+
+.submit-btn {
+    display: flex;
+    width: 256px;
+    height: 56px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #222222;
+    margin: 59px auto 0 auto;
+
+}
+
+.submit-btn img {
+    width: 16px;
+    margin-left: 44px;
+}
+
+.end-message {
+
+    text-align: center;
+}
+
+.end-message.fpc32sp18 {
+    font-weight: 700;
+    margin-bottom: 51px;
+}
+.end-message.fpc16sp14{
+    line-height: 1.5;
+}
+
+.false-message {
+    display: none;
+    font-weight: 400 !important;
+    text-align: center;
 }
